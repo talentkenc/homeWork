@@ -269,27 +269,6 @@
             </h1>
         </div><!-- /.page-header -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="row">
         <div class="col-xs-12">
             <!-- PAGE CONTENT BEGINS -->
@@ -343,8 +322,6 @@
                         </div>
                     </div>
                     </div>
-
-
                     </br>
                 <%--<div class="form-group">--%>
 
@@ -364,12 +341,9 @@
                     </div>
                 </div>
 
-
-
                 <div class="space-4"></div>
 
                 <div class="form-group">
-
 
                     <div class="col-sm-4 control-label no-padding-right">
                         <div class="control-group">
@@ -407,8 +381,6 @@
                         </div>
                     </div>
                     </div>
-
-
 
                 <div class="form-group">
 

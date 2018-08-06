@@ -2,7 +2,7 @@ package com.biz.lesson.dao.student;
 
 
 import com.biz.lesson.model.student.student;
-import com.biz.lesson.model.student.subject;
+import com.biz.lesson.model.subject.subject;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

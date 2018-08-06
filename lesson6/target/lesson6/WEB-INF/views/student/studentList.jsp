@@ -253,9 +253,7 @@
 
                 } catch (e) {
                 }
-
             }
-
         </script>
     </jsp:attribute>
     <jsp:body>

@@ -1,8 +1,10 @@
 package com.biz.lesson.model.student;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.biz.lesson.model.student.grade;
+import com.biz.lesson.model.grade.grade;
+import com.biz.lesson.model.subject.subject;
 import javax.persistence.*;
+
 import java.util.*;
 
 @Entity
@@ -108,11 +110,11 @@ public class student {
         this.totalSubject = totalSubject;
     }
 
-    public com.biz.lesson.model.student.grade getGrade() {
+    public grade getGrade() {
         return grade;
     }
 
-    public void setGrade(com.biz.lesson.model.student.grade grade) {
+    public void setGrade(grade grade) {
         this.grade = grade;
     }
 }

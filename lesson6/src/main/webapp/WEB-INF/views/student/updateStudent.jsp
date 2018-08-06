@@ -269,27 +269,6 @@
             </h1>
         </div><!-- /.page-header -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="row">
         <div class="col-xs-12">
             <!-- PAGE CONTENT BEGINS -->
@@ -344,33 +323,21 @@
                         </div>
                     </div>
 
-
                     </br>
                         <div class="form-group">
-
                         <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 学号 </label>
-
                         <div class="col-sm-9">
                         <input name= "stuId" value="${student.stuId}" readonly="readonly" type="text" id="form-field-1" placeholder="学号" class="col-xs-10 col-sm-5" />
                         </div>
                         </div>
-
                     <div class="form-group">
-
                         <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 姓名 </label>
-
                         <div class="col-sm-9">
                             <input name="stuName" value="${student.stuName}" type="text" id="form-field-1" placeholder="姓名" class="col-xs-10 col-sm-5" />
                         </div>
                     </div>
-
-
-
                     <div class="space-4"></div>
-
                     <div class="form-group">
-
-
                         <div class="col-sm-4 control-label no-padding-right">
                             <div class="control-group">
                                 <div class="radio">
@@ -386,8 +353,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="form-group">
                         <label class="col-sm-3 control-label no-padding-right" for="name">
                             出生日期
@@ -407,9 +372,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
                     <div class="form-group">
 
                         <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 班级 </label>
@@ -422,7 +384,6 @@
                                     <%--<option value="2">语文班</option>--%>
                                     <%--<option value="3">数学班</option>--%>
                                     <%--<option value="4">IT班</option>--%>
-
                             </select>
                         </div>
 

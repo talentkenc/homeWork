@@ -2,17 +2,15 @@ package com.biz.lesson.web.controller.student;
 
 
 import com.aliyun.oss.model.PutObjectResult;
-import com.biz.lesson.business.student.gradeService;
+import com.biz.lesson.business.grade.gradeService;
 //import com.biz.lesson.business.student.student_subjectService;
-
-import com.biz.lesson.business.student.subjectService;
+import com.biz.lesson.business.subject.subjectService;
 //import com.biz.lesson.dao.student.student_subjectCrudRepository;
-import com.biz.lesson.model.student.grade;
+import com.biz.lesson.model.grade.grade;
 import com.biz.lesson.model.student.student;
 import com.biz.lesson.business.student.studentService;
-
 import com.biz.lesson.model.student.student_subject;
-import com.biz.lesson.model.student.subject;
+import com.biz.lesson.model.subject.subject;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.biz.lesson.util.AliOssClient;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.InputStream;
@@ -37,7 +34,7 @@ public class studentContorller {
     @Autowired
     public gradeService gradeService;
     @Autowired
-    public com.biz.lesson.business.student.subjectService subjectService;
+    public subjectService subjectService;
 
     //更新学生信息
     @RequestMapping("/upStudent")
@@ -94,7 +91,6 @@ public class studentContorller {
         return "redirect:/studentList.do?page=0";
     }
 
-
     @RequestMapping("/studentList")
     public ModelAndView selectAllStudent(HttpServletRequest request){
         int page = Integer.parseInt(request.getParameter("page"));
@@ -135,14 +131,6 @@ public class studentContorller {
     }
 
 
-
-
-
-
-
-
-
-
     @RequestMapping("/add")
     public ModelAndView add(){
         List<grade> grades = gradeService.selectAllGrade();
@@ -150,7 +138,6 @@ public class studentContorller {
         modelAndView.addObject("grades",grades);
         return modelAndView;
     }
-
 
     @RequestMapping("/delStudent")
     public String delStudent(@RequestParam("id") Integer id) {
@@ -178,29 +165,15 @@ public class studentContorller {
     public ModelAndView chooseSubject(@RequestParam("id") Integer id){
         List<subject> subjects = new ArrayList<subject>();
         subjects = subjectService.selectAllSubject();
-        //List<Integer> stuList = new ArrayList<stuList>();
-//        for (subject subj:subjects) {
-//            Iterator<student> it = subj.getStudents().iterator();
-//            while(it.hasNext()){
-//                 student tmp = it.next();
-//                stuList.add(tmp.getStuId());
-//            }
-//
-//        }
-        ModelAndView modelAndView = new ModelAndView("student/chooseSubject");
+        ModelAndView modelAndView = new ModelAndView("subject/chooseSubject");
         modelAndView.addObject("stuId",id);
         student  student= stuSer.findOne(id);
         modelAndView.addObject("student",student);
         System.out.println();
         //modelAndView.addObject(stuList);
         modelAndView.addObject("subjects",subjects);
-//        for (subject sub:subjects
-//             ) {
-//
-//        }
         return modelAndView;
     }
-
 
     //获取学生id和课程id，存储到关联表中。
     @RequestMapping("/joinSubject")
@@ -250,7 +223,6 @@ public class studentContorller {
     @RequestMapping("/saveScore")
     public String saveScore(HttpServletRequest request){
         final ReentrantLock lock = new ReentrantLock();
-
         student student = new student();
         request.getParameterNames();
         Map<String, String> parameters = new HashMap<>();

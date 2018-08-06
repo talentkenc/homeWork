@@ -292,9 +292,14 @@
                     </br>
                     <h2><label class="col-md-offset-3 col-md-1"> 请填写${student.stuName}的${subject.subName}分数 </label></h2>
                     <div class="col-sm-3 control-label no-padding-right" for="form-field-1">
-                        <input name= "${subject.subId}" type="text" id="form-field-1" value="0" class="col-xs-10 col-sm-5" onkeyup="yanzheng1()"/>
+                        <input name= "${subject.subId}" type="text" id="form-field-1" value="0" class="col-xs-10 col-sm-5" onmouseout="yanzheng1()"/>
                     </div>
+                    <script type="application/javascript">
+                        function yanzheng1() {
 
+                            alert("aa");
+                        }
+                    </script>
                     </br>
                     <hr/>
                     <%--<script type="application/javascript">--%>
