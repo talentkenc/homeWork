@@ -1,0 +1,244 @@
+07-31 21:40:56 [INFO ] LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: lesson
+	...]
+07-31 21:40:56 [INFO ] Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+07-31 21:40:56 [INFO ] Environment:239 - HHH000206: hibernate.properties not found
+07-31 21:40:56 [INFO ] Environment:346 - HHH000021: Bytecode provider name : javassist
+07-31 21:40:57 [WARN ] EntityManagerFactoryBuilderImpl:906 - HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+07-31 21:40:57 [INFO ] JavaReflectionManager:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+07-31 21:40:57 [INFO ] Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+07-31 21:40:57 [INFO ] ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+07-31 21:40:57 [INFO ] Version:30 - HV000001: Hibernate Validator 5.4.0.Final
+07-31 21:40:57 [WARN ] UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+07-31 21:40:58 [INFO ] SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+07-31 21:40:58 [INFO ] SchemaUpdate:218 - HHH000102: Fetching database metadata
+07-31 21:40:58 [INFO ] SchemaUpdate:230 - HHH000396: Updating schema
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.grade
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [gid, gamount, stuid, gavgscore, gname]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.student
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [birthday, stugrade, stuid, stusex, stuname, picture]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.subject
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [subid, subavgscore, subname, subamount]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.sys_system_property
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [editable, name, description, id, value]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_accesslog
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [requestparams, http_method, id, uri, user, timestamp]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_loginlog
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [actiontype, companyid, logintime, logouttime, loginip, id, user_userid]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_gtnt7pxyoqta8427qagp76tac]
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_gtnt7pxyoqta8427qagp76tac, primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_mainmenu
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [code, companytype, icon, name, description, id, nameen]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_menuitem
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [symbol, code, icon, link, name, description, id, nameen, mainmenu_id]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_20qiyqum570r2hwb99g9adk1r]
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_20qiyqum570r2hwb99g9adk1r, primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_resource
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [symbol, menuitem_id, name, description, id, nameen]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_ikhivuvuv4gxv4q3xvsks62ry]
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_ikhivuvuv4gxv4q3xvsks62ry, primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_role
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [name, description, id, nameen]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_role_menuitem
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [role_id, menuitem_id]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_6ny6jr7f4sqvpqyha7r0qpodd, fk_aoywxcumiyv208eb7qq6qncwo]
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [uk_cuxhw9wdci2flwqfu9v96uh1g, fk_6ny6jr7f4sqvpqyha7r0qpodd]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_role_resource
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [role_id, resource_id]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_1ljp0b1v36v3qta75xr6morws, fk_qhttqis7u509s1nhqv6r529nj]
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [uk_e5m272lqtbtff1nxru1wtakqr, fk_qhttqis7u509s1nhqv6r529nj]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_user
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [address, gender, mobile, postcode, skin, createdate, usertype, nameen, userid, permitip, createby, password, servicetype, emailpassword, navbar, sidebar, name, logo, tel, fax, smtpserver, email, status]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+07-31 21:40:58 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson6.usr_user_role
+07-31 21:40:58 [INFO ] TableMetadata:66 - HHH000037: Columns: [roleid, userid]
+07-31 21:40:58 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_cbihfu68qp1ibycuhod1axebl, fk_pd3oupphgg6pny8ggs7y489oo]
+07-31 21:40:58 [INFO ] TableMetadata:69 - HHH000126: Indexes: [uk_jy2qy9b129w4t9d8uu4m4b62p, fk_cbihfu68qp1ibycuhod1axebl]
+07-31 21:40:58 [INFO ] SchemaUpdate:267 - HHH000232: Schema update complete
+07-31 21:41:00 [WARN ] SqlExceptionHelper:144 - SQL Error: 1048, SQLState: 23000
+07-31 21:41:00 [ERROR] SqlExceptionHelper:146 - Column 'nameen' cannot be null
+07-31 21:41:00 [WARN ] SqlExceptionHelper$StandardWarningHandler:232 - SQL Warning Code: 1048, SQLState: 23000
+07-31 21:41:00 [WARN ] SqlExceptionHelper$StandardWarningHandler:233 - Column 'nameen' cannot be null
+08-03 15:57:40 [INFO ] LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: lesson
+	...]
+08-03 15:57:40 [INFO ] Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+08-03 15:57:40 [INFO ] Environment:239 - HHH000206: hibernate.properties not found
+08-03 15:57:40 [INFO ] Environment:346 - HHH000021: Bytecode provider name : javassist
+08-03 15:57:40 [WARN ] EntityManagerFactoryBuilderImpl:906 - HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+08-03 15:57:40 [INFO ] JavaReflectionManager:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+08-03 15:57:43 [INFO ] Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08-03 15:57:43 [INFO ] ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+08-03 15:57:43 [INFO ] Version:30 - HV000001: Hibernate Validator 5.4.0.Final
+08-03 15:57:43 [WARN ] UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+08-03 15:57:44 [INFO ] SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+08-03 15:57:44 [INFO ] SchemaUpdate:218 - HHH000102: Fetching database metadata
+08-03 15:57:44 [INFO ] SchemaUpdate:230 - HHH000396: Updating schema
+08-03 15:57:44 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.grade
+08-03 15:57:44 [INFO ] TableMetadata:66 - HHH000037: Columns: [gid, gamount, stuid, gavgscore, gname]
+08-03 15:57:44 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:57:44 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:57:44 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.student
+08-03 15:57:44 [INFO ] TableMetadata:66 - HHH000037: Columns: [birthday, stugrade, stuid, stusex, avgscore, stuname, picture, totalsubject]
+08-03 15:57:44 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:57:44 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:57:45 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.student_grade
+08-03 15:57:45 [INFO ] TableMetadata:66 - HHH000037: Columns: [gid, stuid]
+08-03 15:57:45 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_6fqferoeih2vevnc8ito78hji, fk_94xte4okup7v3adhjgpwg97g6]
+08-03 15:57:45 [INFO ] TableMetadata:69 - HHH000126: Indexes: [uk_94xte4okup7v3adhjgpwg97g6, primary]
+08-03 15:57:45 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.student_subject
+08-03 15:57:45 [INFO ] TableMetadata:66 - HHH000037: Columns: [subid, stuid]
+08-03 15:57:45 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_tkrf2fglld2f37cy7313sma9h, fk_4nkvi35c9fv4sgm190vxq4j87]
+08-03 15:57:45 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_tkrf2fglld2f37cy7313sma9h, primary]
+08-03 15:57:45 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.subject
+08-03 15:57:45 [INFO ] TableMetadata:66 - HHH000037: Columns: [subid, subavgscore, subname, subamount]
+08-03 15:57:45 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:57:45 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:57:46 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.sys_system_property
+08-03 15:57:46 [INFO ] TableMetadata:66 - HHH000037: Columns: [editable, name, description, id, value]
+08-03 15:57:46 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:57:46 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:57:46 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_accesslog
+08-03 15:57:46 [INFO ] TableMetadata:66 - HHH000037: Columns: [requestparams, http_method, id, uri, user, timestamp]
+08-03 15:57:46 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:57:46 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:57:46 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_loginlog
+08-03 15:57:46 [INFO ] TableMetadata:66 - HHH000037: Columns: [actiontype, companyid, logintime, logouttime, loginip, id, user_userid]
+08-03 15:57:46 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_gtnt7pxyoqta8427qagp76tac]
+08-03 15:57:46 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_gtnt7pxyoqta8427qagp76tac, primary]
+08-03 15:57:47 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_mainmenu
+08-03 15:57:47 [INFO ] TableMetadata:66 - HHH000037: Columns: [code, companytype, icon, name, description, id, nameen]
+08-03 15:57:47 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:57:47 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:57:47 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_menuitem
+08-03 15:57:47 [INFO ] TableMetadata:66 - HHH000037: Columns: [symbol, code, icon, link, name, description, id, nameen, mainmenu_id]
+08-03 15:57:47 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_20qiyqum570r2hwb99g9adk1r]
+08-03 15:57:47 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_20qiyqum570r2hwb99g9adk1r, primary]
+08-03 15:57:47 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_resource
+08-03 15:57:47 [INFO ] TableMetadata:66 - HHH000037: Columns: [symbol, menuitem_id, name, description, id, nameen]
+08-03 15:57:47 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_ikhivuvuv4gxv4q3xvsks62ry]
+08-03 15:57:47 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_ikhivuvuv4gxv4q3xvsks62ry, primary]
+08-03 15:57:47 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_role
+08-03 15:57:47 [INFO ] TableMetadata:66 - HHH000037: Columns: [name, description, id, nameen]
+08-03 15:57:47 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:57:47 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:57:48 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_role_menuitem
+08-03 15:57:48 [INFO ] TableMetadata:66 - HHH000037: Columns: [role_id, menuitem_id]
+08-03 15:57:48 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_6ny6jr7f4sqvpqyha7r0qpodd, fk_aoywxcumiyv208eb7qq6qncwo]
+08-03 15:57:48 [INFO ] TableMetadata:69 - HHH000126: Indexes: [uk_cuxhw9wdci2flwqfu9v96uh1g, fk_6ny6jr7f4sqvpqyha7r0qpodd]
+08-03 15:57:48 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_role_resource
+08-03 15:57:48 [INFO ] TableMetadata:66 - HHH000037: Columns: [role_id, resource_id]
+08-03 15:57:48 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_1ljp0b1v36v3qta75xr6morws, fk_qhttqis7u509s1nhqv6r529nj]
+08-03 15:57:48 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_1ljp0b1v36v3qta75xr6morws, uk_e5m272lqtbtff1nxru1wtakqr]
+08-03 15:57:48 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_user
+08-03 15:57:48 [INFO ] TableMetadata:66 - HHH000037: Columns: [address, gender, mobile, postcode, skin, createdate, usertype, nameen, userid, permitip, createby, password, servicetype, emailpassword, navbar, sidebar, name, logo, tel, fax, smtpserver, email, status]
+08-03 15:57:48 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:57:48 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:57:49 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_user_role
+08-03 15:57:49 [INFO ] TableMetadata:66 - HHH000037: Columns: [roleid, userid]
+08-03 15:57:49 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_cbihfu68qp1ibycuhod1axebl, fk_pd3oupphgg6pny8ggs7y489oo]
+08-03 15:57:49 [INFO ] TableMetadata:69 - HHH000126: Indexes: [uk_jy2qy9b129w4t9d8uu4m4b62p, fk_cbihfu68qp1ibycuhod1axebl]
+08-03 15:57:49 [INFO ] SchemaUpdate:267 - HHH000232: Schema update complete
+08-03 15:57:59 [WARN ] SqlExceptionHelper:144 - SQL Error: 1048, SQLState: 23000
+08-03 15:57:59 [ERROR] SqlExceptionHelper:146 - Column 'nameen' cannot be null
+08-03 15:57:59 [WARN ] SqlExceptionHelper$StandardWarningHandler:232 - SQL Warning Code: 1048, SQLState: 23000
+08-03 15:57:59 [WARN ] SqlExceptionHelper$StandardWarningHandler:233 - Column 'nameen' cannot be null
+08-03 15:58:24 [INFO ] LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: lesson
+	...]
+08-03 15:58:24 [INFO ] Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+08-03 15:58:24 [INFO ] Environment:239 - HHH000206: hibernate.properties not found
+08-03 15:58:24 [INFO ] Environment:346 - HHH000021: Bytecode provider name : javassist
+08-03 15:58:24 [WARN ] EntityManagerFactoryBuilderImpl:906 - HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+08-03 15:58:24 [INFO ] JavaReflectionManager:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+08-03 15:58:27 [INFO ] Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08-03 15:58:27 [INFO ] ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+08-03 15:58:27 [INFO ] Version:30 - HV000001: Hibernate Validator 5.4.0.Final
+08-03 15:58:27 [WARN ] UUIDHexGenerator:59 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+08-03 15:58:28 [INFO ] SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+08-03 15:58:28 [INFO ] SchemaUpdate:218 - HHH000102: Fetching database metadata
+08-03 15:58:28 [INFO ] SchemaUpdate:230 - HHH000396: Updating schema
+08-03 15:58:28 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.grade
+08-03 15:58:28 [INFO ] TableMetadata:66 - HHH000037: Columns: [gid, gamount, stuid, gavgscore, gname]
+08-03 15:58:28 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:58:28 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:58:28 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.student
+08-03 15:58:28 [INFO ] TableMetadata:66 - HHH000037: Columns: [birthday, stugrade, stuid, stusex, avgscore, stuname, picture, totalsubject]
+08-03 15:58:28 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:58:28 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:58:29 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.student_grade
+08-03 15:58:29 [INFO ] TableMetadata:66 - HHH000037: Columns: [gid, stuid]
+08-03 15:58:29 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_6fqferoeih2vevnc8ito78hji, fk_94xte4okup7v3adhjgpwg97g6]
+08-03 15:58:29 [INFO ] TableMetadata:69 - HHH000126: Indexes: [uk_94xte4okup7v3adhjgpwg97g6, primary]
+08-03 15:58:29 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.student_subject
+08-03 15:58:29 [INFO ] TableMetadata:66 - HHH000037: Columns: [subid, stuid]
+08-03 15:58:29 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_tkrf2fglld2f37cy7313sma9h, fk_4nkvi35c9fv4sgm190vxq4j87]
+08-03 15:58:29 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_tkrf2fglld2f37cy7313sma9h, primary]
+08-03 15:58:29 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.subject
+08-03 15:58:29 [INFO ] TableMetadata:66 - HHH000037: Columns: [subid, subavgscore, subname, subamount]
+08-03 15:58:29 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:58:29 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:58:29 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.sys_system_property
+08-03 15:58:29 [INFO ] TableMetadata:66 - HHH000037: Columns: [editable, name, description, id, value]
+08-03 15:58:29 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:58:29 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:58:30 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_accesslog
+08-03 15:58:30 [INFO ] TableMetadata:66 - HHH000037: Columns: [requestparams, http_method, id, uri, user, timestamp]
+08-03 15:58:30 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:58:30 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:58:30 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_loginlog
+08-03 15:58:30 [INFO ] TableMetadata:66 - HHH000037: Columns: [actiontype, companyid, logintime, logouttime, loginip, id, user_userid]
+08-03 15:58:30 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_gtnt7pxyoqta8427qagp76tac]
+08-03 15:58:30 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_gtnt7pxyoqta8427qagp76tac, primary]
+08-03 15:58:30 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_mainmenu
+08-03 15:58:30 [INFO ] TableMetadata:66 - HHH000037: Columns: [code, companytype, icon, name, description, id, nameen]
+08-03 15:58:30 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:58:30 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:58:31 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_menuitem
+08-03 15:58:31 [INFO ] TableMetadata:66 - HHH000037: Columns: [symbol, code, icon, link, name, description, id, nameen, mainmenu_id]
+08-03 15:58:31 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_20qiyqum570r2hwb99g9adk1r]
+08-03 15:58:31 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_20qiyqum570r2hwb99g9adk1r, primary]
+08-03 15:58:31 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_resource
+08-03 15:58:31 [INFO ] TableMetadata:66 - HHH000037: Columns: [symbol, menuitem_id, name, description, id, nameen]
+08-03 15:58:31 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_ikhivuvuv4gxv4q3xvsks62ry]
+08-03 15:58:31 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_ikhivuvuv4gxv4q3xvsks62ry, primary]
+08-03 15:58:31 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_role
+08-03 15:58:31 [INFO ] TableMetadata:66 - HHH000037: Columns: [name, description, id, nameen]
+08-03 15:58:31 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:58:31 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:58:31 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_role_menuitem
+08-03 15:58:31 [INFO ] TableMetadata:66 - HHH000037: Columns: [role_id, menuitem_id]
+08-03 15:58:31 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_6ny6jr7f4sqvpqyha7r0qpodd, fk_aoywxcumiyv208eb7qq6qncwo]
+08-03 15:58:31 [INFO ] TableMetadata:69 - HHH000126: Indexes: [uk_cuxhw9wdci2flwqfu9v96uh1g, fk_6ny6jr7f4sqvpqyha7r0qpodd]
+08-03 15:58:32 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_role_resource
+08-03 15:58:32 [INFO ] TableMetadata:66 - HHH000037: Columns: [role_id, resource_id]
+08-03 15:58:32 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_1ljp0b1v36v3qta75xr6morws, fk_qhttqis7u509s1nhqv6r529nj]
+08-03 15:58:32 [INFO ] TableMetadata:69 - HHH000126: Indexes: [fk_1ljp0b1v36v3qta75xr6morws, uk_e5m272lqtbtff1nxru1wtakqr]
+08-03 15:58:32 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_user
+08-03 15:58:32 [INFO ] TableMetadata:66 - HHH000037: Columns: [address, gender, mobile, postcode, skin, createdate, usertype, nameen, userid, permitip, createby, password, servicetype, emailpassword, navbar, sidebar, name, logo, tel, fax, smtpserver, email, status]
+08-03 15:58:32 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: []
+08-03 15:58:32 [INFO ] TableMetadata:69 - HHH000126: Indexes: [primary]
+08-03 15:58:32 [INFO ] TableMetadata:65 - HHH000261: Table found: lesson7.usr_user_role
+08-03 15:58:32 [INFO ] TableMetadata:66 - HHH000037: Columns: [roleid, userid]
+08-03 15:58:32 [INFO ] TableMetadata:68 - HHH000108: Foreign keys: [fk_cbihfu68qp1ibycuhod1axebl, fk_pd3oupphgg6pny8ggs7y489oo]
+08-03 15:58:32 [INFO ] TableMetadata:69 - HHH000126: Indexes: [uk_jy2qy9b129w4t9d8uu4m4b62p, fk_cbihfu68qp1ibycuhod1axebl]
+08-03 15:58:32 [INFO ] SchemaUpdate:267 - HHH000232: Schema update complete
+08-03 15:58:37 [WARN ] SqlExceptionHelper:144 - SQL Error: 1048, SQLState: 23000
+08-03 15:58:37 [ERROR] SqlExceptionHelper:146 - Column 'nameen' cannot be null
+08-03 15:58:37 [WARN ] SqlExceptionHelper$StandardWarningHandler:232 - SQL Warning Code: 1048, SQLState: 23000
+08-03 15:58:37 [WARN ] SqlExceptionHelper$StandardWarningHandler:233 - Column 'nameen' cannot be null

@@ -1,0 +1,43 @@
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  
+  <servlet>
+  	<servlet-name>studentAction</servlet-name>
+  	<servlet-class>Action.studentAction</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+	<servlet-name>studentAction</servlet-name>
+	<url-pattern>/studentAction</url-pattern>
+	</servlet-mapping> 
+	
+  <servlet>
+	<servlet-name>studentListAction</servlet-name>
+	<servlet-class>Action.studentListAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>studentListAction</servlet-name>
+	<url-pattern>/studentListAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>studentOperaAction</servlet-name>
+	<servlet-class>Action.studentOperaAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>studentOperaAction</servlet-name>
+	<url-pattern>/studentOperaAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>updateStudentAction</servlet-name>
+	<servlet-class>Action.updateStudentAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>updateStudentAction</servlet-name>
+	<url-pattern>/updateStudentAction</url-pattern>
+  </servlet-mapping>
+	
+</web-app>
+
